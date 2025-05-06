@@ -37,6 +37,16 @@ public abstract class Forma {
 
     @Override
     public String toString() {
-        return super.toString();
+        String aux = "";
+        aux += "Cordenada X:" + coordenadaX + "\n";
+        aux += "Cordenada Y:" + coordenadaY + "\n";
+        aux += "Raio:" + raio + "\n";
+
+        return aux;
     }
+
+//    Metodo abstrato --> metodo que não tem "corpo" (codigo)
+
+    abstract double calcularArea();
+
 }

@@ -1,6 +1,6 @@
 package Exercicio;
 
-public class Cilindro extends Forma{
+public class Cilindro extends Forma implements Volume{
 
     private double altura;
 
@@ -19,6 +19,18 @@ public class Cilindro extends Forma{
 
     @Override
     public String toString() {
-        return super.toString();
+        String aux = super.toString();
+        aux += "Altura:" + altura + "\n";
+        return aux;
+
+    }
+
+    @Override
+    double calcularArea() {
+        return 0;
+    }
+
+    public double calcularVolume(){
+        return -2;
     }
 }

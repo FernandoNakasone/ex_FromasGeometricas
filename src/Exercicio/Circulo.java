@@ -6,6 +6,11 @@ public class Circulo extends Forma {
         super(coordenadaX, coordenadaY, raio);
     }
 
-a
+    @Override
+    double calcularArea() {
+        double area;
+        area = 2 * 3.14 * getRaio();
+        return area;
+    }
 
 }
